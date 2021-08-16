@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/jrudio/go-plex-client"
+	"github.com/BrenekH/go-plex-client"
 	homedir "github.com/mitchellh/go-homedir"
 	"github.com/urfave/cli"
 )
@@ -800,7 +800,7 @@ func stopPlayback(c *cli.Context) error {
 
 	sessionID := selectedSession.Session.ID
 
-	if err := plexConn.TerminateSession(sessionID, "stream stopped by github.com/jrudio/go-plex-client"); err != nil {
+	if err := plexConn.TerminateSession(sessionID, "stream stopped by github.com/BrenekH/go-plex-client"); err != nil {
 		return cli.NewExitError(err, 1)
 	}
 

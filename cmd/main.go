@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/jrudio/go-plex-client"
+	"github.com/BrenekH/go-plex-client"
 	"github.com/mitchellh/go-homedir"
 	"github.com/urfave/cli"
 )
